@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            padding: 10px;
+            margin: 0px;
+            width: 100px;
+            height: auto;
+            text-align: justify;
+            border: 1px solid red;
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button id="open" onclick="openFun()">Open</button>
+        <button id="close" onclick="closeFun()">Close</button>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo distinctio non tenetur quasi blanditiis est esse ipsum beatae nemo possimus?</p>
+    </div>
+
+
+    <script>
+        var open = document.getElementById("open");
+        var pra = document.querySelector("p");
+        console.log(pra);
+        console.log(open);
+        // open.addEventListener('click', open1);
+        function openFun(){
+            pra.style.marginLeft = "0px";
+        }
+        function closeFun(){
+            pra.style.marginLeft = "-122px";
+        }
+
+
+        
+
+
+
+        // const button = document.querySelector('button');
+
+        // button.addEventListener('click', event => {
+        // button.textContent = `Click count: ${event.detail}`;
+        // });
+    </script>
+</body>
+</html>

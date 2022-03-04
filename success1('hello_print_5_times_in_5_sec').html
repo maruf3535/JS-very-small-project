@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success No. 1</title> <!-- print 'hello' 5 times one second after after -->
+</head>
+
+<body>
+
+
+    <script>
+
+        let time = 1000
+
+        var start = setInterval(myFunc, time)
+        function myFunc() {
+            console.log("hello")
+            time += 1000
+            if(time == 6000){
+                clearInterval(start)
+            }
+        }
+
+        // setInterval(function(){
+        //     console.log("hello2")
+        // }, 1000)
+
+
+    </script>
+
+</body>
+
+</html>
