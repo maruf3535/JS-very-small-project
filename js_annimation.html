@@ -88,57 +88,59 @@
         
 
 
-        var h1Content2 = "Rafsan will be a front-end developer..."
-        var annimation2StartTime = (annimation1Time * 2)
-        var k = 0
-        function  annimation2(){
-            if (k > (h1Content2.length - 1)){
-                return;
-            }
-            h1Select.innerHTML += h1Content2.charAt(k);
-            k++;
-        }
-        function annimation2_call(){
-            setInterval('annimation2()', 130)
-        }
-        setTimeout('annimation2_call()', ((annimation2StartTime) + 10))
+        // var h1Content2 = "Rafsan will be a front-end developer..."
+        // var annimation2StartTime = (annimation1Time * 2)
+        // var k = 0
+        // function  annimation2(){
+        //     if (k > (h1Content2.length - 1)){
+        //         return;
+        //     }
+        //     h1Select.innerHTML += h1Content2.charAt(k);
+        //     k++;
+        // }
+        // function annimation2_call(){
+        //     setInterval('annimation2()', 130)
+        // }
+        // setTimeout('annimation2_call()', ((annimation2StartTime) + 10))
 
         
-        var annimation2CloseTime = (annimation2StartTime + (130 * (h1Content2.length)))
-        var l = (h1Content2.length);
-        function annimation2_close() {
-            if (l > (l + 1)){
-                return;
-            }
-            else if (l < 0){
-                return;
-            }
-            h1Content2 = h1Content2.substring(0, l);
-            h1Select.innerHTML = h1Content2;
-            l--;
-        }
-        function annimation2_close_call(){
-            setInterval('annimation2_close()', 130)
-        }
-        setTimeout('annimation2_close_call()', ((annimation2CloseTime) + 10))
+        // var annimation2CloseTime = (annimation2StartTime + (130 * (h1Content2.length)))
+        // var l = (h1Content2.length);
+        // function annimation2_close() {
+        //     if (l > (l + 1)){
+        //         return;
+        //     }
+        //     else if (l < 0){
+        //         return;
+        //     }
+        //     h1Content2 = h1Content2.substring(0, l);
+        //     h1Select.innerHTML = h1Content2;
+        //     l--;
+        // }
+        // function annimation2_close_call(){
+        //     setInterval('annimation2_close()', 130)
+        // }
+        // setTimeout('annimation2_close_call()', ((annimation2CloseTime) + 10))
 
 
 
 
-        var h1Content3 = "Shihab will be a back-end developer..."
-        var annimation3StartTime = (annimation2CloseTime + (h1Content2.length * 130));
-        var m = 0
-        function annimation_reopen(){
-            if (m > (h1Content3.length - 1)){
-                return;
-            }
-            h1Select.innerHTML += h1Content3.charAt(m);
-            m++;
-        }
-        function annimation_reopen_call(){
-            setInterval('annimation_reopen()', 130)
-        }
-        setTimeout('annimation_reopen_call()', ((annimation3StartTime) + 10))
+        // var h1Content3 = "Shihab will be a back-end developer..."
+        // var annimation3StartTime = (annimation2CloseTime + (h1Content2.length * 130));
+        // var m = 0
+        // function annimation_reopen(){
+        //     if (m > (h1Content3.length - 1)){
+        //         return;
+        //     }
+        //     h1Select.innerHTML += h1Content3.charAt(m);
+        //     m++;
+        // }
+        // function annimation_reopen_call(){
+        //     setInterval('annimation_reopen()', 130)
+        // }
+        // setTimeout('annimation_reopen_call()', ((annimation3StartTime) + 10))
+
+
         
         // console.log(h1Content.length)
         // console.log(h1Content2.length)
